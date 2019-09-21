@@ -1,0 +1,19 @@
+String key;  
+//showData(ids);                                      //we are showing data with help of ids of products
+        key="1";
+        final Button addtoCart = findViewById(R.id.addtocart);
+        addtoCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(key.equalsIgnoreCase("1"))
+                {
+                    addtoCart.setText("Go To Cart");
+                    key="2";
+                }else if (key.equalsIgnoreCase("2")){
+                    Intent  intent1 = new Intent(getApplicationContext(),items_cart.class);
+                    intent1.putExtra("id",ids);                                     // from here also we have to pass data we cannot directly pass from recycleradapterTopseller
+                    startActivity(intent1);
+                }
+            }
+        });

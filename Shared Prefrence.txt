@@ -1,0 +1,45 @@
+//For SENDING DATA   (for STORING the value )
+
+                SharedPreferences sharedPreferences = getSharedPreferences("user_details",MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("p_name",p_name);    // used for storing value
+                editor.putString("p_city",p_city);
+                editor.putString("p_address",p_address);
+                //value from spinner
+                editor.putString("p_state", value);
+
+                editor.putString("p_pincode",p_pincode);
+                editor.putString("p_pno",p_pno);
+
+                editor.commit();
+
+************************************************************************************
+				2nd Example (Sending)
+
+SharedPreferences sharedpreferences = getSharedPreferences("username",MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+                editor.putString("u_id",str);    // we are sending this u_id in items_cart activity
+                editor.commit();  
+***************************************************************************************
+
+//FOR RECEVING DATA   (For USING the Value )
+
+        SharedPreferences sharedPreferences1 = getApplication().getSharedPreferences("user_details",MODE_PRIVATE);
+
+        p = sharedPreferences1.getString("p_pincode","");
+        //System.out.println(p);
+        no = sharedPreferences1.getString("p_pno","");
+        //System.out.println(no);
+        String nameofperson=sharedPreferences1.getString("p_name","");
+        System.out.println(nameofperson);
+        String city = sharedPreferences1.getString("p_city","");
+        String address = sharedPreferences1.getString("p_address","");
+        String state = sharedPreferences1.getString("p_state","");
+
+************************************************************************************
+			2nd example (Receving)
+
+SharedPreferences sharedPreferences =getApplication().getSharedPreferences("username",MODE_PRIVATE); 
+        String a= sharedPreferences.getString("u_id","");   // we are receving this u_id from Login Activity this u_id is response
+        System.out.println(a);
+************************************************************************************

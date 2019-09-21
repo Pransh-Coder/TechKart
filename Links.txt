@@ -1,0 +1,27 @@
+Links ...
+
+http://sakardeal.com/android/reg.php - MainActivity 
+
+http://sakardeal.com/android/login.php - Login 
+
+http://sakardeal.com/android/top_cat.php -  Drawerlayout[ParseCategory()]
+
+https://crazymall.co.in/admin/not_usable/product_list.php  - Drawerlayout[jsonParse()]
+
+https://crazymall.co.in/admin/not_usable/product_list.php - Drawerlayout[parseTopSeller()]
+
+http://sakardeal.com/android/my_order.php - OrderList [showOrders(final String user_id)]
+
+https://crazymall.co.in/admin/not_usable/paticular_product_detail.php  -  ShowData[showData(final String i)]
+
+http://sakardeal.com/android/add_to_cart.php  - items_cart[filltocart(final  String id,final String name)]
+
+http://sakardeal.com/android/cart_detail.php - items_cart[ShowCartItems(final String name)]
+
+http://sakardeal.com/android/product_list.php  - ShowProducts[parseTopSeller()] 
+
+http://sakardeal.com/android/delete_item.php - RecyclerAdapterCartItems[removeproducts(final  String remove)]
+
+http://sakardeal.com/android/checkout.php - OrderList[addOrders(final String user_id)]
+
+http://sakardeal.com/android/my_order.php - OrderList[showOrders(final String user_id)]

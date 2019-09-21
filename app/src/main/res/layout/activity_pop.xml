@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:padding="4.5dp"
+    android:layout_height="wrap_content"
+    tools:context=".PopActivity">
+
+    <View
+        android:id="@+id/lin"
+        android:layout_width="200dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintBottom_toBottomOf="@+id/thnx"
+        app:layout_constraintBottom_toTopOf="@+id/thnx"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/thnx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T H A N K S"
+        android:textSize="29sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin"/>
+
+    <TextView
+        android:id="@+id/orderprocess"
+        android:text="Your Order Being Processed "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:typeface="sans"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/thnx"
+        app:layout_constraintTop_toBottomOf="@+id/thnx"/>
+    
+    <Button
+        android:id="@+id/keepshopping"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:text="Keep Shopping"
+        android:textAllCaps="true"
+        android:background="@drawable/btn"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderprocess"
+        app:layout_constraintBottom_toTopOf="@+id/orderprocess"/>
+    
+
+</android.support.constraint.ConstraintLayout>

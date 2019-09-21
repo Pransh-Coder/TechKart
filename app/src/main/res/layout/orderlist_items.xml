@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:src="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/prod_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dbhfhbfhghcfgvgcfgccjj
+                cgcfcf
+                gc"
+                android:typeface="sans"
+                android:layout_toRightOf="@id/image"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/prod_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs. "
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="15dp"
+                android:layout_toRightOf="@id/image"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/prod_name"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dkmdngjfbgb"
+                android:textSize="18sp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@id/prod_price"
+                android:layout_toRightOf="@id/image" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textSize="9dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/image"
+                android:layout_below="@+id/status"/>
+
+            <Button
+                android:id="@+id/cnclorder"
+                android:layout_width="115dp"
+                android:layout_height="20dp"
+                android:text="Cancel Order"
+                android:textColor="@android:color/white"
+                android:background="@drawable/custom_button"
+                android:layout_toRightOf="@id/image"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/date"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/image"
+                android:background="@android:color/darker_gray"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
