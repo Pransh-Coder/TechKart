@@ -100,7 +100,7 @@ public class ShowData extends AppCompatActivity {
                 //textView.setText(i);
                 System.out.println(response);
                 try {
-                    JSONArray jsonArray = new JSONArray(response);
+                    JSONArray jsonArray = new JSONArray(response);      //converting response into JsonArray object 
                     for(int i=0;i<jsonArray.length();i++)
                     {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);

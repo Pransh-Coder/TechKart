@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //we have made this becoz hashmap takes 1 argument as string so we will
-                username = name.getText().toString();                                                  // we have copied value of name editText into string variable username  we can use this in above if condition as if(username.IsEmpty())..
+                //we have made this becoz hashmap takes 1 argument as string so we will use below values
+                username = name.getText().toString();                                                        // we have copied value of name editText into string variable username  we can use this in above if condition as if(username.IsEmpty())..
                 useremail =email.getText().toString();
                 userpassword = password.getText().toString();
 

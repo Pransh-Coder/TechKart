@@ -163,7 +163,7 @@ public class Drawerlayout extends AppCompatActivity implements NavigationView.On
             @Override
             public void onResponse(String response) {
                 try {
-                    JSONArray jsonArray = new JSONArray(response);
+                    JSONArray jsonArray = new JSONArray(response);          // converting string response into JSONArray
 
                     for(int i=0;i<jsonArray.length();i++)
                     {

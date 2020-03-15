@@ -36,8 +36,6 @@ public class Login extends AppCompatActivity {
     String useremail1;
     String password1;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

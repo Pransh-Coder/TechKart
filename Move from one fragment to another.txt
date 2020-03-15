@@ -1,0 +1,34 @@
+//MOVE TO 1 FRAGMENT TO ANOTHER ****************************************
+
+    Fragment someFragment = new SomeFragment(); 
+    FragmentTransaction transaction = getFragmentManager().beginTransaction();
+    transaction.replace(R.id.fragment_container, someFragment ); // give your fragment container id in first parameter
+    transaction.addToBackStack(null);  // if written, this transaction will be added to backstack
+    transaction.commit(); 
+
+// SENDING VALUE FROM 1 FRAGMENT TO ANOTHER***********************
+
+            ClickFragment fragment = new ClickFragment();
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.frame_container, fragment);
+            Bundle bundle = new Bundle();
+            bundle.putInt("SelectedId from MainActivity", id);
+            fragment.setArguments(bundle);
+            transaction.commit();
+
+//GETTING VALUE IN OTHER FRAGMENT
+
+if (getArguments() != null) {
+            int selectedId_from_mainActivity = getArguments().getInt("SelectedId from MainActivity",0);
+
+           // selectedId=selectedId_from_mainActivity;
+        }
+
+
+//MOVING FROM ACTIVITY TO FRAGMENT***********************************
+
+           TrackYourDebtFragment fragment = new TrackYourDebtFragment();
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.on_boarding_fragment_container, fragment);
+            transaction.addToBackStack(null);
+            transaction.commit();

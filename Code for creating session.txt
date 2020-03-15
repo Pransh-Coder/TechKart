@@ -1,0 +1,36 @@
+******************************// Used for creating session*************************
+	
+//LoginActivity
+                SharedPreferences sharedpreferences = getSharedPreferences("login",MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+                editor.putInt("flag",1);    // we are sending this u_id in items_cart activity
+                editor.commit();    //commit()-Commit your preferences changes back from this Editor to the SharedPreferences object it is editing. This atomically performs the requested modifications, replacing whatever is currently in the SharedPreferences.
+
+
+//SplashScreen ********************************************************************
+	
+         int flag=1;
+	
+        sharedPreferences = getSharedPreferences("login",0);
+        flag = sharedPreferences.getInt("flag",0);
+
+          private  class LogoLauncher extends Thread {
+        public  void  run(){
+            try {
+                sleep(1000*SLEEP_TIMER);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            if(flag==1){
+                Intent intent = new Intent(SplashScreen.this,HomeActivity.class);
+                startActivity(intent);
+                SplashScreen.this.finish();
+            }
+            else{
+                Intent intent = new Intent(SplashScreen.this,MainActivity.class);
+                startActivity(intent);
+                SplashScreen.this.finish();
+            }
+
+        }
+    }
